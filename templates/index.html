@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake News Predictor</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Fake News Detection</h1>
+        <form action="/predict" method="post">
+            <input type="text" name="author" placeholder="Author" required><br>
+            <input type="text" name="title" placeholder="News Title" required><br>
+            <button type="submit">Predict</button>
+        </form>
+        
+            <div class="result">
+                <h2>Result: {{ prediction }}</h2>
+            </div>
+        
+    </div>
+</body>
+</html>
